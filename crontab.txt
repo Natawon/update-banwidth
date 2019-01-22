@@ -1,0 +1,2 @@
+* * 1 * * docker exec nginx-cdn sh -c 'certbot renew' >/dev/null 2>&1
+*/5 * * * * /docker/nginx-cdn/data/utils/update-bandwidth.sh ens160
