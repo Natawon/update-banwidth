@@ -33,6 +33,7 @@ status="$rx_value_recal $tx_value_recal"
 #echo '{"server_name":"th-live-17.open-cdn.com","bandwidth_rx":"'$rx_value_recal'","bandwidth_tx":"'$tx_value_recal'"}'
 
 curl -v -H "Content-Type: application/json" --request POST -d '{"server_name":"43.229.149.12","bandwidth_rx":"'$rx_value_recal'","bandwidth_tx":"'$tx_value_recal'"}' http://test-api.deknerd.com/api/v1.0/thailivestream/bandwidth
+#curl -k -X POST -H "Content-Type: application/json" -d '{"server_name":"43.229.149.12","bandwidth_rx":"'$rx_value_recal'","bandwidth_tx":"'$tx_value_recal'"}' https://socket.deknerd.com:8091/api/v1.0/thailivestream/bandwidth
 
 # {
 #    "id":"4",
